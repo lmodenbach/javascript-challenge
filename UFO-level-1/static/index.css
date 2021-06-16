@@ -1,8 +1,8 @@
-table { 
+html body table { 
     margin-left: auto;
     margin-right: auto;
     background-color: powderblue;
-    width: 500px;
+    width: 75% !important;
 }
 
 #stars {
