@@ -2,7 +2,8 @@ var sightings = data;
 
 var body = d3.select("body");
 
-var table = body.append("table").style("background-color", "powderblue");
+var table = body.append("table").style("background-color", "powderblue").style("width", "500px");
+table.attr("class", "table table-hover table-bordered");
 
 var thead = table.append("thead");
 
