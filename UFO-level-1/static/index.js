@@ -7,7 +7,6 @@ function createTable(data) {
     table.attr("class", "table table-hover table-bordered");
 
     var thead = table.append("thead");
-    thead.attr("color", "blueviolet");
     var row = thead.append("tr");
     var headers = ["Date/Time", "City", "State", "Country", "Shape", "Duration", "Comment"];
     headers.forEach((header) => {
