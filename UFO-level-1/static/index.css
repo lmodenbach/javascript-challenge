@@ -6,8 +6,20 @@ html body table {
     margin-left: auto;
     margin-right: auto;
     background-color: powderblue;
-    width: 60% !important;
+    width: 675px !important;
+    height: 600px !important;
     color:blueviolet;
+}
+
+html body table thead {
+  position:sticky;
+}
+
+html body table tbody {
+  overflow-y: scroll;      
+  height: 549px; 
+  width: 674px;          
+  position: absolute;
 }
 
 #stars {
