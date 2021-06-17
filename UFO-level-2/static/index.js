@@ -6,7 +6,6 @@ var table = body.append("table");
 table.attr("class", "table table-hover table-bordered");
 
 var thead = table.append("thead");
-
 var row = thead.append("tr");
 
 var headers = ["Date/Time", "City", "State", "Country", "Shape", "Duration", "Comment"];
@@ -56,12 +55,7 @@ function searchTable() {
     var shapeInputValue = shapeInputElement.property("value");
     var shapeFiltered = sightings.filter(sighting => sighting.shape.toUpperCase() === shapeInputValue.toUpperCase());
     
-    filtered.forEach((sighting) => {
-        Object.entries(sighting).forEach(([key, value]) => {
-        resultsDiv.append("h5").text(`${key}: ${value}`).style("color", "blueviolet");
-        });
-        resultsDiv.append("h5").text("--------------------------------------------").style("color", "blueviolet");
-    });
+    
      
     
 }
