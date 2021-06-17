@@ -26,10 +26,10 @@ function createTable(passed) {
 var button = d3.select("#button");
 var form = d3.select("#form");
   
-button.on("click", searchTable);
-form.on("submit", searchTable);
+button.on("click", filterTable);
+form.on("submit", filterTable);
 
-function searchTable() {
+function filterTable() {
 
     d3.event.preventDefault();
     
