@@ -11,10 +11,6 @@ html body table {
     color:blueviolet;
 }
 
-html body table thead {
-  position:sticky;
-}
-
 html body table tbody {
   overflow-y: scroll;      
   height: 549px; 
