@@ -6,13 +6,27 @@
     <title>Verified, bonified UFO Sightings!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/index.css" />
-    <style>
-        body {
-          background-color: black;
-        }
-    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form id="form">
+              <div class="form-group">
+                <label for="sightings-form" style="color: blueviolet;">Filter Sightings Data By Date</label>
+                <input class="form-control" id="sightings-form-input" name="sightings-form" type="text" placeholder="1/1/2010">
+              </div>
+              <button id="button" type="button" class="btn btn-default" style="color: blueviolet;">Enter</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 style="color: blueviolet;">Filtered Data Summary</h2>
+            <ul class="summary"></ul>
+          </div>
+        </div>
+    </div>
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div> 
