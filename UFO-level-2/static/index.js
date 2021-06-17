@@ -36,14 +36,26 @@ function searchTable() {
 
     d3.event.preventDefault();
     
-    var inputElement = d3.select("#sightings-form-input");
-    var inputValue = inputElement.property("value");
+    var dateInputElement = d3.select("#date-form-input");
+    var dateInputValue = dateInputElement.property("value");
+    var dateFiltered = sightings.filter(sighting => sighting.datetime === dateInputValue);
 
-    var filtered = sightings.filter(sighting => sighting.datetime === inputValue);
-    var resultsDiv = d3.select(".summary");
+    var cityInputElement = d3.select("#city-form-input");
+    var cityInputValue = cityInputElement.property("value");
+    var cityFiltered = sightings.filter(sighting => sighting.city.toUpperCase() === cityInputValue.toUpperCase());
+    
+    var stateInputElement = d3.select("#state-form-input");
+    var stateInputValue = stateInputElement.property("value");
+    var stateFiltered = sightings.filter(sighting => sighting.state.toUpperCase() === stateInputValue.toUpperCase());
+    
+    var countryInputElement = d3.select("#country-form-input");
+    var countryInputValue = countryInputElement.property("value");
+    var countryFiltered = sightings.filter(sighting => sighting.country.toUpperCase() === countryInputValue.toUpperCase());
 
-    resultsDiv.html("");
-
+    var shapeInputElement = d3.select("#shape-form-input");
+    var shapeInputValue = shapeInputElement.property("value");
+    var shapeFiltered = sightings.filter(sighting => sighting.shape.toUpperCase() === shapeInputValue.toUpperCase());
+    
     filtered.forEach((sighting) => {
         Object.entries(sighting).forEach(([key, value]) => {
         resultsDiv.append("h5").text(`${key}: ${value}`).style("color", "blueviolet");

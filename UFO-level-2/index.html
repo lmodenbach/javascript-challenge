@@ -10,22 +10,56 @@
 <body>
     <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <form id="form">
               <div class="form-group">
-                <label for="sightings-form" style="color: blueviolet;">Filter Sightings Data By Date</label>
-                <input class="form-control" id="sightings-form-input" name="sightings-form" type="text" placeholder="1/1/2010">
+                <label for="date-form" style="color: blueviolet;">Filter Sightings Data By Date</label>
+                <input class="form-control" id="date-form-input" name="date-form" type="text" placeholder="1/1/2010">
               </div>
-              <button id="button" type="button" class="btn btn-default" style="color: blueviolet;">Enter</button>
             </form>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <h2 style="color: blueviolet;">Filtered Data Summary</h2>
-            <div class="summary"></div>
+            <div class="col-md-6">
+              <form id="form">
+                <div class="form-group">
+                  <label for="city-form" style="color: blueviolet;">Filter Sightings Data By City</label>
+                  <input class="form-control" id="city-form-input" name="city-form" type="text" placeholder="bonita">
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form id="form">
+                <div class="form-group">
+                  <label for="state-form" style="color: blueviolet;">Filter Sightings Data By State</label>
+                  <input class="form-control" id="state-form-input" name="state-form" type="text" placeholder="ca">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form id="form">
+                <div class="form-group">
+                  <label for="country-form" style="color: blueviolet;">Filter Sightings Data By Country</label>
+                  <input class="form-control" id="country-form-input" name="country-form" type="text" placeholder="us">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form id="form">
+                <div class="form-group">
+                  <label for="shape-form" style="color: blueviolet;">Filter Sightings Data By Shape</label>
+                  <input class="form-control" id="shape-form-input" name="shape-form" type="text" placeholder="triangle">
+                </div>
+                <button id="button" type="button" class="btn btn-default" style="color: blueviolet;">Enter</button>
+              </form>
+            </div>
+          </div>
     </div>
     <div id="stars"></div>
     <div id="stars2"></div>
