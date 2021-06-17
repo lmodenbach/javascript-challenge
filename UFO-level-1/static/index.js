@@ -40,15 +40,15 @@ function searchTable() {
     var inputValue = inputElement.property("value");
 
     var filtered = sightings.filter(sighting => sighting.datetime === inputValue);
-    var list = d3.select(".summary");
+    var resultsDiv = d3.select(".summary");
 
-    list.html("");
+    resultsDiv.html("");
 
     filtered.forEach((sighting) => {
         Object.entries(sighting).forEach(([key, value]) => {
-        list.append("li").text(`${key}: ${value}`);
+        resultsDiv.append("h5").text(`${key}: ${value}`).style("color", "blueviolet");
         });
-        list.append("li").text("-----------------------------------");
+        resultsDiv.append("h5").text("--------------------------------------------").style("color", "blueviolet");
     });
      
     
