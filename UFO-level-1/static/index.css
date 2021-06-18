@@ -1,7 +1,10 @@
+
+/*Black background to show stars*/
 html body {
     background-color: black;
   }
 
+/*center table with margins, set width to override bootstrap, add color*/
 html body table { 
     margin-left: auto;
     margin-right: auto;
@@ -10,10 +13,13 @@ html body table {
     color:blueviolet;
 }
 
+/*line up the table body and headers with column width set to fit content best*/
 html body table tbody {                
   position:relative;
 }
 
+/* Parallax Pixel Stars */
+/* https://codepen.io/saransh/pen/BKJun */
 #stars {
     width: 1px;
     height: 1px;
