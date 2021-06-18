@@ -7,14 +7,11 @@ html body table {
     margin-right: auto;
     background-color: powderblue;
     width: 900px !important;
-    height: 600px !important;
     color:blueviolet;
 }
 
-html body table tbody {
-  overflow-y: scroll;                
+html body table tbody {                
   position:relative;
-  overflow-x: hidden;
 }
 
 #stars {

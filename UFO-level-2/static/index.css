@@ -6,16 +6,12 @@ html body table {
   margin-left: auto;
   margin-right: auto;
   background-color: powderblue;
-  width: 675px !important;
-  height: 600px !important;
+  width: 900px !important;
   color:blueviolet;
 }
 
-html body table tbody {
-overflow-y: scroll;      
-height: 549px; 
-width: 674px;          
-position: absolute;
+html body table tbody {                
+position:relative;
 }
 
 #stars {
