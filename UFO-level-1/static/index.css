@@ -6,22 +6,15 @@ html body table {
     margin-left: auto;
     margin-right: auto;
     background-color: powderblue;
-    width: 675px !important;
+    width: 900px !important;
     height: 600px !important;
     color:blueviolet;
-    table-layout: fixed;
-}
-
-html body table thead {
-  table-layout: inherit;
 }
 
 html body table tbody {
-  overflow-y: scroll;      
-  height: 549px; 
-  width: 674px;          
-  position: absolute;
-  table-layout: inherit;
+  overflow-y: scroll;                
+  position:relative;
+  overflow-x: hidden;
 }
 
 #stars {
