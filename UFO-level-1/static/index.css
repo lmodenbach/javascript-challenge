@@ -9,6 +9,11 @@ html body table {
     width: 675px !important;
     height: 600px !important;
     color:blueviolet;
+    table-layout: fixed;
+}
+
+html body table thead {
+  table-layout: inherit;
 }
 
 html body table tbody {
@@ -16,6 +21,7 @@ html body table tbody {
   height: 549px; 
   width: 674px;          
   position: absolute;
+  table-layout: inherit;
 }
 
 #stars {
